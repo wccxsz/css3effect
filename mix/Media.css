@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+body ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body ul li {
+  position: relative;
+  list-style: none;
+  height: 60px;
+  width: 60px;
+  margin: 0 30px;
+  -webkit-transform: rotate(-30deg) skew(25deg);
+          transform: rotate(-30deg) skew(25deg);
+  background: #ccc;
+}
+
+body ul li span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 30px !important;
+}
+
+body ul li:hover span:nth-child(5) {
+  -webkit-transform: translate(40px, -40px);
+          transform: translate(40px, -40px);
+}
+
+body ul li:hover span:nth-child(4) {
+  -webkit-transform: translate(30px, -30px);
+          transform: translate(30px, -30px);
+  opacity: .8;
+}
+
+body ul li:hover span:nth-child(3) {
+  -webkit-transform: translate(20px, -20px);
+          transform: translate(20px, -20px);
+  opacity: .6;
+}
+
+body ul li:hover span:nth-child(2) {
+  -webkit-transform: translate(10px, -10px);
+          transform: translate(10px, -10px);
+  opacity: .4;
+}
+
+body ul li:hover span:nth-child(1) {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: .2;
+}
+
+body ul li:nth-child(4) span {
+  background: #16a085;
+}
+
+body ul li:nth-child(3) span {
+  background: #f39c12;
+}
+
+body ul li:nth-child(2) span {
+  background: #27ae60;
+}
+
+body ul li:nth-child(1) span {
+  background: #e74c3c;
+}
+/*# sourceMappingURL=Media.css.map */

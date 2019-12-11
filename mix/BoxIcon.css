@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #ccc;
+}
+
+body ul {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body ul li {
+  list-style: none;
+  margin: 0 40px;
+}
+
+body ul li a {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  text-align: center;
+  -webkit-transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+          transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+body ul li a::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  width: 20px;
+  height: 100%;
+  background: #b1b1b1;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: rotate(0deg) skewY(-45deg);
+          transform: rotate(0deg) skewY(-45deg);
+}
+
+body ul li a::after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  bottom: -20px;
+  width: 100%;
+  height: 20px;
+  background: #b1b1b1;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: rotate(0deg) skewX(-45deg);
+          transform: rotate(0deg) skewX(-45deg);
+}
+
+body ul li a:hover {
+  -webkit-transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+          transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  -webkit-box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+body ul li a .fab, body ul li .fas {
+  font-size: 40px;
+  color: #262626;
+  line-height: 80px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body ul li:hover .fab, body ul li:hover .fas {
+  color: #fff;
+}
+
+body ul li:hover:nth-child(1) a {
+  background: #3b5999;
+}
+
+body ul li:hover:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+body ul li:hover:nth-child(1) a:after {
+  background: #3b5999;
+}
+
+body ul li:hover:nth-child(2) a {
+  background: #1abc9c;
+}
+
+body ul li:hover:nth-child(2) a::before {
+  background: #1abc9c;
+}
+
+body ul li:hover:nth-child(2) a::after {
+  background: #1abc9c;
+}
+
+body ul li:hover:nth-child(3) a {
+  background: #2ecc71;
+}
+
+body ul li:hover:nth-child(3) a::before {
+  background: #2ecc71;
+}
+
+body ul li:hover:nth-child(3) a::after {
+  background: #2ecc71;
+}
+
+body ul li:hover:nth-child(4) a {
+  background: #3498db;
+}
+
+body ul li:hover:nth-child(4) a::before {
+  background: #3498db;
+}
+
+body ul li:hover:nth-child(4) a::after {
+  background: #3498db;
+}
+
+body ul li:hover:nth-child(5) a {
+  background: #e67e22;
+}
+
+body ul li:hover:nth-child(5) a::before {
+  background: #e67e22;
+}
+
+body ul li:hover:nth-child(5) a::after {
+  background: #e67e22;
+}
+/*# sourceMappingURL=BoxIcon.css.map */
